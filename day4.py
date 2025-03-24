@@ -10,7 +10,7 @@
 # print(random.choice(friends))
 
 
-#rock_paper_scissor
+# rock_paper_scissor
 
 import random
 
@@ -65,7 +65,54 @@ else:
     # Game Logic
     if user_choice == computer_choice:
         print("It's a draw! 🤝")
-    elif (user_choice == 0 and computer_choice == 2) or (user_choice == 1 and computer_choice == 0) or (user_choice == 2 and computer_choice == 1):
+    elif (user_choice == 0 and computer_choice == 2) or (user_choice == 1 and computer_choice == 0) or (
+            user_choice == 2 and computer_choice == 1):
         print("You win! 🎉")
     else:
         print("You lose! 😢")
+
+import random
+
+# Rock
+rock = """
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+"""
+
+# Paper
+paper = """
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+"""
+
+# Scissors
+scissors = """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+"""
+
+game_images = [rock, paper, scissor]
+
+user_choice = int(input("Write what you choose? O for Rock, 1 for Paper and 2 for Scissor"))
+
+if user_choice >=3 or user_choice <0:
+    print("Invalid choice! You lose. ")
+else:
+    print("Choose please:")
+    print(game_images[user_choice])
+
+    computer_choice=random.randint(0,2)
+    print("Computer chose: ")
+
