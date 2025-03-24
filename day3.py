@@ -27,14 +27,30 @@
 # else:
 #     print("Sorry hopefully you will be able to ride boat later")
 
-print(r''' 
- _               _           _       _              
-| |             | |         (_)     | |              
-| |__   __ _  __| |_ __ ___  _ _ __ | |_ ___  _ __  
-| '_ \ / _` |/ _` | '_ ` _ \| | '_ \| __/ _ \| '_ \ 
-| |_) | (_| | (_| | | | | | | | | | | || (_) | | | |
-|_.__/ \__,_|\__,_|_| |_| |_|_|_| |_|\__\___/|_| |_|
-''')
+# print(r'''
+#  _               _           _       _
+# | |             | |         (_)     | |
+# | |__   __ _  __| |_ __ ___  _ _ __ | |_ ___  _ __
+# | '_ \ / _` |/ _` | '_ ` _ \| | '_ \| __/ _ \| '_ \
+# | |_) | (_| | (_| | | | | | | | | | | || (_) | | | |
+# |_.__/ \__,_|\__,_|_| |_| |_|_|_| |_|\__\___/|_| |_|
+# ''')
+#
+# print('\'You "are" Eshan.')
 
-print('\'You "are" Eshan.')
+print("Welcome to the Rollar coaster")
+height = int(input("Drop your height :"))
 
+if height >= 120:
+    print("You can ride rollar coaster ")
+    age = int(input("What is your age ?"))
+    if age >= 18:
+        print("You can ride it ")
+    else:
+        print("Sorry better luck next time")
+else:
+    print("You have to wait")
+
+wants_photo = input("Do you want to take a photo? Press Y for 'YES' and N for 'NO'")
+if wants_photo == "Y":
+    bill += 3
