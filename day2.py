@@ -21,7 +21,6 @@ score -= 40
 
 print(score)
 
-
 print("Welcome to the tip calculator!")
 bill=input(f"What was the total bill? $")
 print(f"That as your bill {bill}")
